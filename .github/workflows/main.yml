@@ -7,7 +7,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: awact/cloudfront-action@master
       with:
-        aws-cloudfront-distribution-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+        DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@master
       with:
