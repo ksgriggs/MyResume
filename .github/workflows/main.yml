@@ -1,23 +1,30 @@
-name: Sync to S3 and invalidate Cloudfront
-on: [push]
+name: Upload Website
+
+on:
+  push:
+    branches:
+    - master
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@master
+    - uses: awact/s3-action@master
       with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
-    - name: Deploy static site to S3 bucket
-      run: aws s3 sync ./dist/ s3://griggs-aws.com --delete
-    - name: Invalidate Cloudfront
-      uses: awact/cloudfront-action@master
+        args: --acl public-read --follow-symlinks --delete
       env:
-        SOURCE_PATH: '/*'
-        AWS_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+        SOURCE_DIR: './dist'
+        AWS_REGION: 'us-east-1'
+        AWS_S3_BUCKET: 's3://griggs-aws.com'
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
+
+    - name: Invalidate cloudfront cache
+    - uses: awact/cloudfront-action@master
+      env:
+        SOURCE_PATH: '/*'
+	AWS_REGION: 'us-east-1'
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+	DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
