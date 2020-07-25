@@ -4,5 +4,5 @@ xhttp.onreadystatechange = function () {
         document.getElementById("visits").innerHTML = xhttp.responseText;
     }
 };
-xhttp.open("GET", "https://LLLLLuhn4ff5i12.execute-api.us-east-1.amazonaws.com/Prod/resume", true);
+xhttp.open("Get", "https://3zy6xxdat0.execute-api.us-east-1.amazonaws.com/Prod/counter", true)
 xhttp.send();
