@@ -1,228 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Resume - Start Bootstrap Theme</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Scott Griggs</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Headshot.jpg" alt="" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blog">Blog</a> </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Scott
-                        <span class="text-primary">Griggs</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Atlanta, Georgia area ·
-                        <a href="mailto:sgriggs@gmail.com">sgriggs@gmail.com</a>
-                    </div>
-                    <p class="lead mb-5">I've been lucky enough to have been able to pursue my dream of a career in aviation, but I have really missed working in IT.  I have increased my skill set to include multiple AWS certifications in addition to my background in UNIX administration, and I am excited to rekindle my IT career.</p>
-                    <p>
-                        Page Visits: <span id="visits"></span>
-                    </p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/ksgriggs"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://www.github.com/ksgriggs"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Consultant</h3>
-                            <div class="subheading mb-3">Daringway</div>
-                            <p>Created a CI/CD environment for doing integration testing of multiple AWS terraform modules.</p>
-                            <p>CI/CD pipeline leveraged Github Actions and terraform for the automation.</p>
-                            <p>Implemented development workflow consistening of a PR review process with automated validation.</p>
-                            <p>Created a multi Github repo workflow where changes in any module repo triggers integration test.</p>
-                            <p>Integrated with Slack to post Github action status</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2020 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Airline Pilot</h3>
-                            <div class="subheading mb-3">Atlantic Southeast Airlines / ExpressJet Airlines</div>
-                            <p>Airline pilot responsible for the safety of the passengers, crew, cargo and aircraft during all phases of flight.  I have flown the CRJ-200, CRJ-700, CRJ-900 and the Embraer E-175.  I have more than 9,000 hours of flight time as an airline transport pilot.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2005 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Flight Instructor / Ground Instructor</h3>
-                            <div class="subheading mb-3">AirVentures Flight School</div>
-                            <p>Taught ground school and gave flight instruction to student pilots.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2004 - October 2005</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior UNIX Administrator</h3>
-                            <div class="subheading mb-3">The Weather Channel</div>
-                            <p>Coordinated the conversion of our SAN from EMC Symmetrix 5 to Hitachi 9960 hardware.  Migrated all systems to the new hardware and setup development, test, and production Veritas clusters attached to the Hitachi via Brocade switches.  Planned and coordinated the migration of all data from EMC to Hitachi.</p>
-                            <p>UNIX system administrator for the interactive television development team and content group.  They provided weather graphics for interactive television customers.  My duties encompassed all their UNIX administration needs.  This included development software loads and updates and all other day-to-day needs of the development team.  The equipment supported consisted of were two Sun E450’s and four Sun E250’s.</p>
-                            <p>Implemented our EMC storage solution into our data center.  This required that I work closely with our EMC support engineers to integrate the equipment into our legacy system infrastructure and facilitate its use with our current and future projects.  The system was a Symmetrix 5 with 1 TB of storage.</p>
-                            <p>I provided day-to-day support for all Sun servers.  This involved working with our solution center, development teams, and DBA group on a daily basis to provide 24/7 coverage and support.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">April 2000 - November 2003</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">UNIX Consultant</h3>
-                            <div class="subheading mb-3">The People Network</div>
-                            <p>UNIX system administrator in the Production Services and Support group providing Tier II support for systems and applications and Tier III support for new projects.  As Tier III, I was lead admin for the projects assigned to me which required coordination between the admin group, DBA group, the network group and the project manager to ensure the projects were successfully completed with the time frame assigned.  As Tier II, I provided day-to-day UNIX support as required for applications and systems which included working tickets from Support Magic.  The most common daily Tier II activities were NIS, DNS, backup, intranet issues and user administration.  My major projects were Brio, Inconcert and notes migration to Sun.</p>
-                            <p>UNIX system administrator for software development project.  Provided general UNIX support in test, development and production environments for the development team.  The equipment supported were two Sun E4000 and two Sun E6000 running Solaris 2.5.1 with multiple Oracle instances on each.</p>
-                            <p>Setup hardware for an Oracle PDB cluster containing two Sun E6000 and four fully populated RSM storage arrays.  Installed Solaris 2.5.1, all required software patches, the PDB software and configured it for use.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 1997 - April 2000</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">UNIX Analyst</h3>
-                            <div class="subheading mb-3">Paranet, Inc.</div>
-                            <p>I worked multiple contracts for Sun Professional services installing Oracle Parallel Database clusters for clients which included Oracle, CNN and the State of Georgia.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 1995 - October 1997</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">UNIX System Administrator</h3>
-                            <div class="subheading mb-3">Delta Air Lines Inc. / TransQuest Information Solutions Inc.</div>
-                            <p>UNIX administrator responsible for the corporate SMTP server.  Managed the corporate firewall, NIS+, NFS and DNS servers.  Monitored and maintained 100+ Sun workstations and servers.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">February 1991 - October 1995</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Auburn University</h3>
-                            <div class="subheading mb-3">Bachelor of Aviation Management</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">1986-1990</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-aws"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-linux"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Knowledge Areas</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Terraform & Ansible
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            CI/CD: GitHub, GitHub Actions
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Programming: Python & BASH
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Linux & UNIX Administration
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Projects-->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projects</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Cloud Resume Challenge</h3>
-                            <div class="subheading mb-3">Project Link: <a href="https://cloudresumechallenge.dev/">cloudresumechallenge.dev</a></div><br>
-                            <p>Built a resume website using AWS services.  The site uses S3, DynamoDB, API Gateway, Lambda, Route 53, Certificate Manager, CloudFront and is version controlled with Git on GitHub.  It uses HTTPS for security.  The serverless function is written in Python and the backend is packaged with a SAM template and deployed via the AWS SAM CLI.  I used GitHub Actions for the front end and back end to automate the CI/CD pipeline.</p>
-                            <p>GitHub Repositorys <a href="https://github.com/ksgriggs/MyResume">github.com/ksgriggs/MyResume</a> and <a href="https://github.com/ksgriggs/MyResume-SAM">github.com/ksgriggs/MyResum-SAM</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2020</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Certifications-->
-            <section class="resume-section" id="certifications">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Certifications</h2>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="https://www.youracclaim.com/badges/823f2e7c-56e4-4f67-9720-edefc598c673/public_url"><img src="https://imgur.com/phPT1qi.png"></a></li>
-                        <li class="list-inline-item"><a href="https://www.youracclaim.com/badges/27af6780-0929-4208-a0f4-b86afb1681f9/public_url"><img src="https://imgur.com/lyZSOHg.png"></a></li>
-                    </ul>
-                </div>
-            </section>
-            <!-- Blog-->
-            <section class="resume-section" id="blog">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Blog</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <a class="u-link" href="https://dev.to/ksgriggs/apply-what-you-ve-learned-with-the-cloud-resume-challenge-3bmh">Apply what you've learned with the Cloud Resume Challenge</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Resume - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      id="sideNav"
+    >
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Scott Griggs</span>
+        <span class="d-none d-lg-block"
+          ><img
+            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            src="assets/img/Headshot.jpg"
+            alt=""
+        /></span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience"
+              >Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education"
+              >Education</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#certifications"
+              >Certifications</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+      <!-- About-->
+      <section class="resume-section" id="about">
+        <div class="resume-section-content">
+          <h1 class="mb-0">
+            Scott
+            <span class="text-primary">Griggs</span>
+          </h1>
+          <div class="subheading mb-5">
+            Atlanta, Georgia area ·
+            <a href="https://mailhide.io/e/B2wazpSE">Contact Me</a>
+          </div>
+          <p class="lead mb-5">
+            I've been lucky enough to have been able to pursue my dream of a
+            career in aviation, but I have really missed working in IT. I have
+            increased my skill set to include multiple AWS certifications in
+            addition to my background in UNIX administration, and I am excited
+            to rekindle my IT career.
+          </p>
+          <p>Page Visits: <span id="visits"></span></p>
+          <div class="social-icons">
+            <a class="social-icon" href="https://www.linkedin.com/in/ksgriggs"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a class="social-icon" href="https://www.github.com/ksgriggs"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- Counter JS-->
-        <script src="js/visitors.js"></script>
-    </body>
+      </section>
+      <hr class="m-0" />
+      <!-- Experience-->
+      <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Experience</h2>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Consultant</h3>
+              <div class="subheading mb-3">Daringway</div>
+              <p>
+                Created a CI/CD environment for doing integration testing of
+                multiple AWS terraform modules.
+              </p>
+              <p>
+                CI/CD pipeline leveraged Github Actions and terraform for the
+                automation.
+              </p>
+              <p>
+                Implemented development workflow consistening of a PR review
+                process with automated validation.
+              </p>
+              <p>
+                Created a multi Github repo workflow where changes in any module
+                repo triggers integration test.
+              </p>
+              <p>Integrated with Slack to post Github action status</p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">July 2020 - Present</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Airline Pilot</h3>
+              <div class="subheading mb-3">
+                Atlantic Southeast Airlines / ExpressJet Airlines
+              </div>
+              <p>
+                Airline pilot responsible for the safety of the passengers,
+                crew, cargo and aircraft during all phases of flight. I have
+                flown the CRJ-200, CRJ-700, CRJ-900 and the Embraer E-175. I
+                have more than 9,000 hours of flight time as an airline
+                transport pilot.
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">October 2005 - Present</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Flight Instructor / Ground Instructor</h3>
+              <div class="subheading mb-3">AirVentures Flight School</div>
+              <p>
+                Taught ground school and gave flight instruction to student
+                pilots.
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">June 2004 - October 2005</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Senior UNIX Administrator</h3>
+              <div class="subheading mb-3">The Weather Channel</div>
+              <p>
+                Coordinated the conversion of our SAN from EMC Symmetrix 5 to
+                Hitachi 9960 hardware. Migrated all systems to the new hardware
+                and setup development, test, and production Veritas clusters
+                attached to the Hitachi via Brocade switches. Planned and
+                coordinated the migration of all data from EMC to Hitachi.
+              </p>
+              <p>
+                UNIX system administrator for the interactive television
+                development team and content group. They provided weather
+                graphics for interactive television customers. My duties
+                encompassed all their UNIX administration needs. This included
+                development software loads and updates and all other day-to-day
+                needs of the development team. The equipment supported consisted
+                of were two Sun E450’s and four Sun E250’s.
+              </p>
+              <p>
+                Implemented our EMC storage solution into our data center. This
+                required that I work closely with our EMC support engineers to
+                integrate the equipment into our legacy system infrastructure
+                and facilitate its use with our current and future projects. The
+                system was a Symmetrix 5 with 1 TB of storage.
+              </p>
+              <p>
+                I provided day-to-day support for all Sun servers. This involved
+                working with our solution center, development teams, and DBA
+                group on a daily basis to provide 24/7 coverage and support.
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">April 2000 - November 2003</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">UNIX Consultant</h3>
+              <div class="subheading mb-3">The People Network</div>
+              <p>
+                UNIX system administrator in the Production Services and Support
+                group providing Tier II support for systems and applications and
+                Tier III support for new projects. As Tier III, I was lead admin
+                for the projects assigned to me which required coordination
+                between the admin group, DBA group, the network group and the
+                project manager to ensure the projects were successfully
+                completed with the time frame assigned. As Tier II, I provided
+                day-to-day UNIX support as required for applications and systems
+                which included working tickets from Support Magic. The most
+                common daily Tier II activities were NIS, DNS, backup, intranet
+                issues and user administration. My major projects were Brio,
+                Inconcert and notes migration to Sun.
+              </p>
+              <p>
+                UNIX system administrator for software development project.
+                Provided general UNIX support in test, development and
+                production environments for the development team. The equipment
+                supported were two Sun E4000 and two Sun E6000 running Solaris
+                2.5.1 with multiple Oracle instances on each.
+              </p>
+              <p>
+                Setup hardware for an Oracle PDB cluster containing two Sun
+                E6000 and four fully populated RSM storage arrays. Installed
+                Solaris 2.5.1, all required software patches, the PDB software
+                and configured it for use.
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">October 1997 - April 2000</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">UNIX Analyst</h3>
+              <div class="subheading mb-3">Paranet, Inc.</div>
+              <p>
+                I worked multiple contracts for Sun Professional services
+                installing Oracle Parallel Database clusters for clients which
+                included Oracle, CNN and the State of Georgia.
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">October 1995 - October 1997</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">UNIX System Administrator</h3>
+              <div class="subheading mb-3">
+                Delta Air Lines Inc. / TransQuest Information Solutions Inc.
+              </div>
+              <p>
+                UNIX administrator responsible for the corporate SMTP server.
+                Managed the corporate firewall, NIS+, NFS and DNS servers.
+                Monitored and maintained 100+ Sun workstations and servers.
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">February 1991 - October 1995</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Education-->
+      <section class="resume-section" id="education">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Education</h2>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Auburn University</h3>
+              <div class="subheading mb-3">Bachelor of Aviation Management</div>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">1986-1990</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Skills-->
+      <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Skills</h2>
+          <div class="subheading mb-3">Programming Languages & Tools</div>
+          <ul class="list-inline dev-icons">
+            <li class="list-inline-item"><i class="fab fa-aws"></i></li>
+            <li class="list-inline-item"><i class="fab fa-linux"></i></li>
+            <li class="list-inline-item"><i class="fab fa-python"></i></li>
+          </ul>
+          <div class="subheading mb-3">Knowledge Areas</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              Terraform & Ansible
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              CI/CD: GitHub, GitHub Actions
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              Programming: Python & BASH
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              Linux & UNIX Administration
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Projects-->
+      <section class="resume-section" id="projects">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Projects</h2>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Cloud Resume Challenge</h3>
+              <div class="subheading mb-3">
+                Project Link:
+                <a href="https://cloudresumechallenge.dev/"
+                  >cloudresumechallenge.dev</a
+                >
+              </div>
+              <br />
+              <p>
+                Built a resume website using AWS services. The site uses S3,
+                DynamoDB, API Gateway, Lambda, Route 53, Certificate Manager,
+                CloudFront and is version controlled with Git on GitHub. It uses
+                HTTPS for security. The serverless function is written in Python
+                and the backend is packaged with a SAM template and deployed via
+                the AWS SAM CLI. I used GitHub Actions for the front end and
+                back end to automate the CI/CD pipeline.
+              </p>
+              <p>
+                GitHub Repositorys
+                <a href="https://github.com/ksgriggs/MyResume"
+                  >github.com/ksgriggs/MyResume</a
+                >
+                and
+                <a href="https://github.com/ksgriggs/MyResume-SAM"
+                  >github.com/ksgriggs/MyResum-SAM</a
+                >
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">July 2020</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Certifications-->
+      <section class="resume-section" id="certifications">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Certifications</h2>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a
+                href="https://www.youracclaim.com/badges/823f2e7c-56e4-4f67-9720-edefc598c673/public_url"
+                ><img src="https://imgur.com/phPT1qi.png"
+              /></a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="https://www.youracclaim.com/badges/27af6780-0929-4208-a0f4-b86afb1681f9/public_url"
+                ><img src="https://imgur.com/lyZSOHg.png"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Blog-->
+      <section class="resume-section" id="blog">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Blog</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <a
+                class="u-link"
+                href="https://dev.to/ksgriggs/apply-what-you-ve-learned-with-the-cloud-resume-challenge-3bmh"
+                >Apply what you've learned with the Cloud Resume Challenge</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Counter JS-->
+    <script src="js/visitors.js"></script>
+  </body>
 </html>
